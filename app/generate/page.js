@@ -139,7 +139,10 @@ export default function Generate() {
     p: 4, 
     width: '35%', 
     backgroundColor: '#1e1e1e', 
-    color: '#ffffff'
+    color: '#ffffff',
+    display: 'flex', 
+    flexDirection: 'column',
+    alignItems: 'center' // Center content horizontally
 }}>
     <TextField 
         value={text} 
@@ -166,16 +169,16 @@ export default function Generate() {
     <Button
         variant="contained" 
         color="primary" 
-        onClick={handleSubmit} 
-        fullWidth
+        onClick={handleSubmit}
         sx={{
-            maxWidth: '100px', 
-            margin: '0 auto', // Center the button
+            maxWidth: '100px',
+            alignSelf: 'center' // Center the button within the flex container
         }}
     >
         Submit
     </Button>
 </Paper>
+
 
 
 
