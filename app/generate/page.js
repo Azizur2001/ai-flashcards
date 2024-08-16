@@ -136,94 +136,48 @@ export default function Generate() {
 
 
                 <Paper sx={{ 
-    p: 4, 
-    width: '35%', 
-    backgroundColor: '#1e1e1e', 
-    color: '#ffffff',
-    display: 'flex', 
-    flexDirection: 'column',
-    alignItems: 'center' // Center content horizontally
-}}>
-    <TextField 
-        value={text} 
-        onChange={(e) => setText(e.target.value)}
-        label="Enter text"
-        fullWidth
-        multiline
-        rows={4}
-        variant="outlined"
-        sx={{
-            mb: 2,
-            width: '100%', // Ensure full width for consistency
-            maxWidth: '600px', // Set a max-width to control size
-            backgroundColor: '#333333', 
-            color: '#ffffff'
-        }}
-        InputLabelProps={{
-            style: { color: '#ffffff' }
-        }}
-        InputProps={{
-            style: { color: '#ffffff' }
-        }}
-    />
-    <Button
-        variant="contained" 
-        color="primary" 
-        onClick={handleSubmit}
-        sx={{
-            maxWidth: '100px',
-            alignSelf: 'center' // Center the button within the flex container
-        }}
-    >
-        Submit
-    </Button>
-</Paper>
-
-
-
-
-                {/* <Paper sx={{ 
-                    p: 4, 
-                    width: '35%', 
-                    backgroundColor: '#1e1e1e', 
-                    color: '#ffffff'
-                }}>
-                    <TextField 
-                        value={text} 
-                        onChange={(e) => setText(e.target.value)}
-                        label="Enter text"
-                        fullWidth
-                        multiline
-                        rows={4}
-                        variant="outlined"
-                        sx={{
-                            mb: 2,
-                            width: '100%', // Ensure full width for consistency
-                            maxWidth: '600px', // Set a max-width to control size
-                            backgroundColor: '#333333', 
-                            color: '#ffffff'
-                        }}
-                        InputLabelProps={{
-                            style: { color: '#ffffff' }
-                        }}
-                        InputProps={{
-                            style: { color: '#ffffff' }
-                        }}
-                    />
-                    <Button
-                        variant="contained" 
-                        color="primary" 
-                        onClick={handleSubmit} 
-                        fullWidth
-                        sx={{
-                            maxWidth: '100px', 
-                            margin: '0 auto' // Center the button
-                        }}
-                    >
-                        Submit
-                    </Button>
-
-                </Paper> */}
+                        p: 4, 
+                        width: '35%', 
+                        backgroundColor: '#1e1e1e', 
+                        color: '#ffffff',
+                        display: 'flex', 
+                        flexDirection: 'column',
+                        alignItems: 'center' // Center content horizontally
+                    }}>
+                        <TextField 
+                            value={text} 
+                            onChange={(e) => setText(e.target.value)}
+                            label="Enter text"
+                            fullWidth
+                            multiline
+                            rows={4}
+                            variant="outlined"
+                            sx={{
+                                mb: 2,
+                                width: '100%', // Ensure full width for consistency
+                                maxWidth: '600px', // Set a max-width to control size
+                                backgroundColor: '#333333', 
+                                color: '#ffffff'
+                            }}
+                            InputLabelProps={{
+                                style: { color: '#ffffff' }
+                            }}
+                            InputProps={{
+                                style: { color: '#ffffff' }
+                            }}
+                        />
+                        <Button
+                            variant="contained" 
+                            color="primary" 
+                            onClick={handleSubmit}
+                            sx={{
+                                maxWidth: '100px',
+                                alignSelf: 'center' // Center the button within the flex container
+                            }}
+                        >
+                            Submit
+                        </Button>
+                    </Paper>
             </Box>
         
             {flashcards.length > 0 && (
