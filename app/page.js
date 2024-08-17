@@ -149,13 +149,13 @@ export default function Home() {
                 Basic
               </Typography>
               <Typography variant="h6" gutterBottom>
-                $5 / month
+                $0 / month
               </Typography>
               <Typography>
                 {' '}
                 Access to basic flashcard features and limited storage.
               </Typography>
-              <Button variant="contained" color="primary" sx={{ mt: 2, backgroundColor: '#1e88e5', color: '#ffffff', '&:hover': { backgroundColor: '#1565c0' } }}>
+              <Button variant="contained" color="primary" sx={{ mt: 2, backgroundColor: '#1e88e5', color: '#ffffff', '&:hover': { backgroundColor: '#1565c0' } }} href='/sign-up'>
                 Choose basic
               </Button>
             </Box>
