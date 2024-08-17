@@ -182,7 +182,7 @@ export default function Generate() {
         
             {flashcards.length > 0 && (
                 <Box sx={{ mt: 4 }}>
-                    <Typography variant="h5" gutterBottom>Flashcards Preview</Typography>
+                    <Typography variant="h5" gutterBottom textAlign='center' padding='10px'>Flashcards Preview</Typography>
                     <Container maxWidth="100vw">
                         <Grid container spacing={3}>
                             {flashcards.map((flashcard, index) => (
